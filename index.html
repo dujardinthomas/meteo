@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ICONE ONGLET -->
+    <link rel="icon" href="img/soleil.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygOsg5oSCG-QQwKzxJFGD6krdESvfVRY&libraries=places"></script>
+    <script src="js/meteo.js"></script>
+    
+    <link rel="stylesheet" href="css/vetements.css">
+
+</head>
+
+<body>
+
+    <div class="location" id="location">Vous êtes localisé à </div>
+
+    <div class="meteo">
+
+        <h2>METEO DE <span id="cityName"></span> </h2>
+
+        <input type="text" id="city-input" name="city-input" placeholder="Entrez la ville">
+
+        <div class=choixDate id=choixDate hidden>
+            <label for='input-date'>Choisissez une date et une heure :</label>
+            <input type="datetime-local" id="input-date" name="trip-start" value="" max="">
+        </div>
+
+        <div class=showMeteoJS id=showMeteoJS>
+            <div class="heure" id="heure"></div>
+            <div class="temperature" id="temperature"></div>
+            <div class="precipitation" id="precipitation"></div>
+        </div>
+
+    </div>
+
+
+    <div class="personnage">
+        <div class="character">
+            <img id="character-img" src="img/character.png" alt="Character">
+            <img id="tshirt-noir" src="img/tshirtNoir.png" alt="tshirtNoir">
+            <img id="jeans" src="img/jeans.jpg" alt="jeans">
+            <img id="parapluie" src="img/parapluie.png" alt="parapluie">
+        </div>
+    </div>
+
+    <script defer src="js/vetements.js"></script>
+
+    
+
+
+</body>
+
+</html>
